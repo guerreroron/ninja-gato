@@ -1,0 +1,16 @@
+body {
+    /* outline: 1px solid blue; */
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.container{
+margin-top: 40px;
+width: 400px;
+height: auto;
+background-image: linear-gradient(#e5e1f8, white, #e5e1f8);
+}
+
+.row{
+padding: 5px;
+}

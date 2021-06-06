@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es-CL">
+  <head>
+    <title>Ninja-Gato</title>
+    <meta charset="UTF-8">
+    
+    <meta name="description" content="ninja-cat Jquery function attr">
+    <meta name="author" content="RonaldGuerrero0071">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!--link bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.css" rel="stylesheet">
+
+    <!--CSS propio-->
+    <link rel="stylesheet" href="./assets/styles-ninja-gato.css">
+
+    <!-- JS Jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+
+    <script>
+       $(document).ready(function(){
+        $('img').click(function(){
+            var ruta_actual = $(this).attr('src');
+            var ruta_alt = $(this).attr('data-alt-src');
+            $(this).attr('src', ruta_alt);
+            $(this).attr('data-alt-src', ruta_actual);
+        });
+    });
+    </script>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row">
+            <img src="./img/ninja0.png" data-alt-src="./img/cat0.png">
+        </div>
+        <div class="row">
+            <img src="./img/ninja1.png" data-alt-src="./img/cat1.png">
+        </div>
+        <div class="row">
+            <img src="./img/ninja2.png" data-alt-src="./img/cat2.png">
+        </div>
+        <div class="row">
+            <img src="./img/ninja3.png" data-alt-src="./img/cat3.png">
+        </div>
+        <div class="row">
+            <img src="./img/ninja4.png" data-alt-src="./img/cat4.png">
+        </div>
+    </div>
+
+    <!--HEADER-->
+    <!--NAV-->
+    <!--MAIN-->
+    <!--SECTION-->
+    <!--ARTICLE-->
+    <!--FOOTER-->
+        <!--JS bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>
